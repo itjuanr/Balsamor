@@ -1,0 +1,222 @@
+body {
+    font-family: 'Recoleta', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #F4EBD9;
+}
+
+header {
+    background-color: #F3DDAF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header nav .cadastro {
+    text-align: right;
+}
+
+header nav .cadastro a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+header nav .cadastro span {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    color: #333;
+}
+
+header nav .cadastro span a {
+    text-decoration: none;
+    color: #333;
+    font-weight: normal;
+}
+
+
+.hero {
+    text-align: center;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 1000px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(245, 245, 220, 0.8);
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 24px;
+    width: calc(100% - 40px);
+    max-width: 700px;
+}
+
+.about {
+    padding: 50px;
+    background-color: #F4EBD9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-content {
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-direction: row; 
+}
+
+.about-image {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 1; 
+    max-width: 5000px;
+    text-align: left; 
+    padding-right: 50px; 
+}
+
+.about-text h2 {
+    font-size: 58px;
+    margin-bottom: 20px;
+    color: #2F4217;
+    font-weight: bold;
+}
+
+.about-text p {
+    font-size: 28px;
+    line-height: 1.6;
+}
+
+
+.cocktails {
+    padding: 55px;
+    background-color: #2F4217;
+    text-align: center;
+}
+
+.cocktails h2 {
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.cocktail-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cocktail-item img {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-info, .social-media, .feedback {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info p, .social-media p, .feedback p {
+    margin: 5px 0;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.feedback button {
+    background-color: #8f7e4f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+}
