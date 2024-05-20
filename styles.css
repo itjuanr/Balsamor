@@ -19,6 +19,7 @@ header .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    position: relative;
 }
 
 header .logo img {
@@ -73,30 +74,47 @@ header nav .cadastro span a {
     font-weight: normal;
 }
 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
 
 .hero {
-    text-align: center;
     position: relative;
+    text-align: center;
 }
 
 .hero img {
     width: 100%;
-    height: 1000px;
-    object-fit: cover;
+    height: auto;
+}
+
+.hero-text-container {
+    background-color: rgba(245, 245, 220, 0.9); 
+    color: #333;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin: 0 auto;
+    position: relative;
+    top: -50px; 
 }
 
 .hero h1 {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(245, 245, 220, 0.8);
-    color: #333;
-    padding: 10px 20px;
-    border-radius: 5px;
     font-size: 24px;
-    width: calc(100% - 40px);
-    max-width: 700px;
+    margin: 0;
 }
 
 .about {
@@ -148,7 +166,6 @@ header nav .cadastro span a {
     line-height: 1.6;
 }
 
-
 .cocktails {
     padding: 55px;
     background-color: #2F4217;
@@ -165,6 +182,7 @@ header nav .cadastro span a {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .cocktail-item img {
@@ -176,7 +194,7 @@ header nav .cadastro span a {
 }
 
 footer {
-    background-color: #333;
+    background-color: #542C0D;
     color: #fff;
     padding: 30px 50px;
     display: flex;
@@ -219,4 +237,125 @@ footer {
     width: 100%;
     text-align: left;
     font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo {
+        order: 1;
+    }
+
+    .menu-toggle {
+        display: flex;
+        order: 2;
+        margin-top: 10px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+    }
+
+    header nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header nav.active {
+        display: flex;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    header nav .cadastro {
+        text-align: center;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .hero img {
+        height: auto;
+    }
+
+    .hero-text-container {
+        max-width: 90%;
+        top: -30px;
+    }
+
+    .hero h1 {
+        font-size: 18px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-text h2 {
+        font-size: 36px;
+    }
+
+    .about-text p {
+        font-size: 18px;
+    }
+
+    .cocktails h2 {
+        font-size: 36px;
+    }
+
+    .cocktail-item img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .social-media, .feedback {
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .feedback button {
+        width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text-container {
+        top: -20px;
+    }
+
+    .hero h1 {
+        font-size: 16px;
+    }
+
+    .about-text h2 {
+        font-size: 28px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+    }
+
+    .cocktails h2 {
+        font-size: 28px;
+    }
 }
