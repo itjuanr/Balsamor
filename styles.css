@@ -150,7 +150,7 @@ button.next{
     position: relative;
     text-align: center;
     width: calc(100% + 4px);
-    margin-left: -2px;
+    margin-left: -px;
 }
 
 .hero img {
