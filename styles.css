@@ -255,49 +255,89 @@ button.next{
 }
 
 footer {
-    background-color: #542C0D;
+    background-color: #4C2A13;
     color: #fff;
-    padding: 30px 50px;
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
 }
 
 .footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.contact-info, .social-media, .feedback {
+.footer-section {
+    margin: 10px;
     flex: 1;
-    min-width: 300px;
+    text-align: center;
 }
 
-.contact-info p, .social-media p, .feedback p {
+.footer-section p {
     margin: 5px 0;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 150px;
+}
+
+.social-media {
+    text-align: center;
 }
 
 .social-media a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-media a img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.social-media a i {
+    font-size: 24px;
+}
+
+.feedback {
+    text-align: center;
 }
 
 .feedback button {
-    background-color: #8f7e4f;
+    background-color: transparent;
+    border: 1px solid #fff;
     color: #fff;
-    border: none;
     padding: 10px 20px;
-    margin: 5px 0;
-    border-radius: 5px;
+    margin: 5px;
     cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
     display: block;
     width: 100%;
-    text-align: left;
-    font-size: 16px;
+    max-width: 200px;
+    margin: 5px auto;
+}
+
+.feedback button:hover {
+    background-color: #fff;
+    color: #4C2A13;
 }
 
 @media (max-width: 768px) {
