@@ -264,6 +264,7 @@ footer {
     flex-wrap: wrap;
 }
 
+
 .footer-content {
     display: flex;
     justify-content: space-between;
@@ -290,6 +291,24 @@ footer {
 
 .footer-logo img {
     width: 150px;
+}
+
+.btn-link {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 5px auto;
+    display: inline-block; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    background-color: #fff;
+    color: #4C2A13;
 }
 
 .social-media {
@@ -346,7 +365,7 @@ footer {
 .feedback select,
 .feedback input[type="email"],
 .feedback input[type="tel"],
-.feedback button {
+.feedback button{
     background-color: transparent;
     border: 1px solid #fff;
     color: #fff;
@@ -358,6 +377,7 @@ footer {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    text-decoration: none; 
 }
 
 .feedback select:hover,
