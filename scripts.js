@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function () {
     var myCarousel = document.querySelector('#carouselExampleIndicators');
     var carousel = new bootstrap.Carousel(myCarousel, {
-        interval: 3000, 
+        interval: 6000, 
         ride: 'carousel',  
         pause: false 
     });
