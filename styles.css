@@ -596,4 +596,10 @@ header nav {
     .cocktails h2 {
         font-size: 28px;
     }
-}
+    .nav-menu{
+        transition: transform 0.3s ease;
+    }
+    
+    .nav-menu:hover {
+        transform: scale(1.1);
+    }
