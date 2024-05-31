@@ -231,6 +231,7 @@ button.next{
     padding: 55px;
     background-color: #2F4217;
     text-align: center;
+    position: relative; 
 }
 
 .cocktails h2 {
@@ -239,20 +240,25 @@ button.next{
     color: white;
 }
 
-
 .cocktail-list {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+    position: relative; 
 }
 
 .cocktail-item {
-    width: 300px;
-    height: 300px; 
-    border-radius: 15px; 
-    position: relative; 
-    overflow: hidden; 
+    width: 370px;
+    height: 370px; 
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 .flip-card {
@@ -328,6 +334,26 @@ button.next{
     background-color:  #2F4217; 
 }
 
+.prev-cocktail, .next-cocktail {
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+    background: none; 
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.prev-cocktail {
+    left: 5px;
+}
+
+.next-cocktail {
+    right: 5px;
+}
 
 footer {
     background-color: #4C2A13;
@@ -546,10 +572,8 @@ header nav {
         font-size: 36px;
     }
 
-    .cocktail-item img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
+    .cocktail-item {
+        width: calc(50% - 20px);
     }
 
     footer {
@@ -602,5 +626,9 @@ header nav {
     
     .nav-menu:hover {
         transform: scale(1.1);
+    }
+
+    .cocktail-item {
+        width: calc(100% - 20px);
     }
 }

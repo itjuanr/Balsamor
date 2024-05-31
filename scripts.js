@@ -18,3 +18,27 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    $('.cocktail-list').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: false,
+        prevArrow: $('.prev-cocktail'), 
+        nextArrow: $('.next-cocktail'), 
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+});
+
