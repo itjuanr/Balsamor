@@ -221,12 +221,6 @@ button.next{
     font-weight: bold;
 }
 
-.about-text p {
-    font-size: 28px;
-    line-height: 1.6;
-    font-family: 'Roobert';
-}
-
 .cocktails {
     padding: 55px;
     background-color: #2F4217;
@@ -243,14 +237,14 @@ button.next{
 .cocktail-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px; /* Aumente o gap entre os itens */
     justify-content: center;
     position: relative; 
 }
 
 .cocktail-item {
-    width: 370px;
-    height: 370px; 
+    width: 220px; /* Ajuste a largura conforme necessário */
+    height: 300px; /* Ajuste a altura conforme necessário */
     border-radius: 15px;
     position: relative;
     overflow: hidden;
@@ -258,7 +252,7 @@ button.next{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* Aumente o margin-bottom para espaçar mais os itens */
 }
 
 .flip-card {
@@ -279,7 +273,6 @@ button.next{
     overflow: hidden; 
 }
 
-
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
@@ -287,7 +280,6 @@ button.next{
 .flip-card:hover .flip-card-front img {
     opacity: 0; 
 }
-
 
 .flip-card-front, .flip-card-back {
     position: absolute;
@@ -297,12 +289,10 @@ button.next{
     border-radius: 15px; 
 }
 
-
 .flip-card-front {
     transform: rotateY(0deg);
     z-index: 2; 
 }
-
 
 .flip-card-front img {
     width: 100%;
@@ -310,6 +300,8 @@ button.next{
     border-radius: 15px; 
     transition: opacity 0.8s; 
     opacity: 1; 
+    object-fit: cover; /* Mantém a proporção da imagem e cobre todo o contêiner */
+    object-position: center; /* Centraliza a imagem */
 }
 
 .flip-card-back {
@@ -336,7 +328,7 @@ button.next{
 
 .prev-cocktail, .next-cocktail {
     position: absolute;
-    top: 55%;
+    top: 50%;
     transform: translateY(-50%);
     background: none; 
     color: white;
@@ -568,12 +560,20 @@ header nav {
     .about-text p {
         font-size: 16px;
     }
-    .cocktails h2 {
-        font-size: 36px;
+
+    .cocktail-list {
+        flex-direction: column; /* Alinhar itens em coluna para telas menores */
+        align-items: center;
     }
 
     .cocktail-item {
-        width: calc(50% - 20px);
+        width: 90%; /* Largura total em telas menores */
+        height: auto; /* Altura automática em telas menores */
+    }
+
+    .flip-card-front img, .flip-card-back {
+        width: 100%;
+        height: auto;
     }
 
     footer {
@@ -628,7 +628,17 @@ header nav {
         transform: scale(1.1);
     }
 
+    .cocktails h2 {
+        font-size: 36px; /* Reduzir o tamanho da fonte em telas menores */
+    }
+
     .cocktail-item {
-        width: calc(100% - 20px);
+        width: 100%; /* Largura total em telas menores */
+        margin-bottom: 20px; /* Ajuste de margem inferior para telas menores */
+    }
+
+    .prev-cocktail, .next-cocktail {
+        top: auto;
+        bottom: 20px;
     }
 }
