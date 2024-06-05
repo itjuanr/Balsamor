@@ -629,7 +629,7 @@ header nav {
     }
 
     .cocktails h2 {
-        font-size: 28px;
+        font-size: 15px;
     }
     .nav-menu{
         transition: transform 0.3s ease;
@@ -639,13 +639,15 @@ header nav {
         transform: scale(1.1);
     }
 
-    .cocktails h2 {
-        font-size: 36px; 
-    }
-
     .cocktail-item {
-        width: 100%; 
+        width: 80%; 
+        margin: 0 auto; 
         margin-bottom: 20px; 
+    }
+    
+    .cocktail-item img {
+        width: 100%; 
+        height: auto; 
     }
 
     .prev-cocktail, .next-cocktail {
