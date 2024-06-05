@@ -494,6 +494,15 @@ footer {
     color: #4C2A13;
 }
 
+.footer-ribbon {
+    background-color:  #F3DDAF;
+    color: #4C2A13;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
 
 @media (max-width: 768px) {
 
