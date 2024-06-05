@@ -212,6 +212,7 @@ button.next{
     max-width: 5000px;
     text-align: left; 
     padding-right: 50px; 
+    
 }
 
 .about-text h2 {
@@ -219,6 +220,10 @@ button.next{
     margin-bottom: 20px;
     color: #2F4217;
     font-weight: bold;
+}
+
+.about-text p {
+    font-size: 30px;
 }
 
 .cocktails {
@@ -561,6 +566,13 @@ header nav {
         font-size: 16px;
     }
 
+    .cocktails {
+        padding: 55px;
+        background-color: #2F4217;
+        text-align: center;
+        position: relative; 
+    }
+
     .cocktail-list {
         flex-direction: column; /* Alinhar itens em coluna para telas menores */
         align-items: center;
@@ -629,12 +641,12 @@ header nav {
     }
 
     .cocktails h2 {
-        font-size: 36px; /* Reduzir o tamanho da fonte em telas menores */
+        font-size: 36px; 
     }
 
     .cocktail-item {
-        width: 100%; /* Largura total em telas menores */
-        margin-bottom: 20px; /* Ajuste de margem inferior para telas menores */
+        width: 100%; 
+        margin-bottom: 20px; 
     }
 
     .prev-cocktail, .next-cocktail {
