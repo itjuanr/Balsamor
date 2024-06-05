@@ -305,8 +305,8 @@ button.next{
     border-radius: 15px; 
     transition: opacity 0.8s; 
     opacity: 1; 
-    object-fit: cover; /* Mantém a proporção da imagem e cobre todo o contêiner */
-    object-position: center; /* Centraliza a imagem */
+    object-fit: cover;
+    object-position: center; 
 }
 
 .flip-card-back {
@@ -324,6 +324,14 @@ button.next{
     box-sizing: border-box; 
     text-align: center; 
     backface-visibility: visible; 
+}
+
+.flip-card-back h3 {
+    font-size: 35px;
+}
+
+.flip-card-back p {
+    font-size: 25px;
 }
 
 .flip-card:hover .flip-card-back {
@@ -566,26 +574,17 @@ header nav {
         font-size: 16px;
     }
 
-    .cocktails {
-        padding: 55px;
-        background-color: #2F4217;
-        text-align: center;
-        position: relative; 
-    }
-
     .cocktail-list {
-        flex-direction: column; /* Alinhar itens em coluna para telas menores */
+        flex-direction: column;
         align-items: center;
     }
 
     .cocktail-item {
-        width: 90%; /* Largura total em telas menores */
-        height: auto; /* Altura automática em telas menores */
+        flex: 0 0 100%;
     }
 
-    .flip-card-front img, .flip-card-back {
-        width: 100%;
-        height: auto;
+    .prev-cocktail, .next-cocktail {
+        display: none;
     }
 
     footer {
@@ -650,7 +649,6 @@ header nav {
     }
 
     .prev-cocktail, .next-cocktail {
-        top: auto;
-        bottom: 20px;
+        display: none;
     }
 }
