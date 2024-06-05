@@ -327,11 +327,11 @@ button.next{
 }
 
 .flip-card-back h3 {
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .flip-card-back p {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .flip-card:hover .flip-card-back {
