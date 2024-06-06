@@ -242,14 +242,14 @@ button.next{
 .cocktail-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px; /* Aumente o gap entre os itens */
+    gap: 40px; 
     justify-content: center;
     position: relative; 
 }
 
 .cocktail-item {
-    width: 220px; /* Ajuste a largura conforme necessário */
-    height: 300px; /* Ajuste a altura conforme necessário */
+    width: 220px; 
+    height: 300px; 
     border-radius: 15px;
     position: relative;
     overflow: hidden;
@@ -257,7 +257,7 @@ button.next{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 40px; /* Aumente o margin-bottom para espaçar mais os itens */
+    margin-bottom: 40px; 
 }
 
 .flip-card {
@@ -583,17 +583,72 @@ header nav {
         font-size: 16px;
     }
 
+    .slick-center {
+        display: block !important;
+    }
+    
+    .slick-list {
+        overflow: visible;
+    }
+    
+    .slick-slide img {
+        width: 100%;
+        height: auto;
+    }       
+
+    .cocktails {
+        padding: 20px; 
+        text-align: center;
+    }
+
+    .cocktails h2 {
+        font-size: 18px; 
+        margin-bottom: 20px; 
+    }
+
     .cocktail-list {
-        flex-direction: column;
-        align-items: center;
+        display: block; 
+        gap: 20px; 
     }
 
     .cocktail-item {
-        flex: 0 0 100%;
+        width: 100%; /* Garantir que os itens ocupem toda a largura disponível */
+    }
+
+    .flip-card {
+        width: 100%; 
+    }
+
+    .flip-card-inner {
+        border-radius: 15px;
+        width: 100%; 
+        height: auto; 
+    }
+
+    .flip-card-front {
+        width: 100%; /* Garante que o elemento ocupe toda a largura disponível */
+    }
+
+    .flip-card-front img {
+        width: 100%; /* Garantir que as imagens ocupem toda a largura do seu contêiner */
+        height: auto; /* Permitir que a altura seja ajustada automaticamente */
+    }
+
+    .flip-card-back {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .flip-card-back h3 {
+        font-size: 20px;
+    }
+
+    .flip-card-back p {
+        font-size: 14px; 
     }
 
     .prev-cocktail, .next-cocktail {
-        display: none;
+        display: none!important;;
     }
 
     footer {
@@ -637,29 +692,74 @@ header nav {
         font-size: 16px;
     }
 
-    .cocktails h2 {
-        font-size: 15px;
-    }
-    .nav-menu{
-        transition: transform 0.3s ease;
+    .slick-center {
+        display: block !important;
     }
     
-    .nav-menu:hover {
-        transform: scale(1.1);
+    .slick-list {
+        overflow: visible;
+    }
+    
+    .slick-slide img {
+        width: 100%;
+        height: auto;
+    } 
+
+    .cocktails {
+        padding: 20px; 
+        text-align: center;
+    }
+
+    .cocktails h2 {
+        font-size: 17px; 
+        margin-bottom: 20px; 
+    }
+
+    .cocktail-list {
+        display: flex;
+        flex-wrap: nowrap; 
+        overflow-x: auto; 
+        gap: 20px;
+        padding: 10px; 
     }
 
     .cocktail-item {
-        width: 80%; 
-        margin: 0 auto; 
-        margin-bottom: 20px; 
+        width: 100%; /* Garantir que os itens ocupem toda a largura disponível */
     }
-    
-    .cocktail-item img {
+
+    .flip-card {
+        width: 100%; 
+    }
+
+    .flip-card-inner {
+        border-radius: 15px;
         width: 100%; 
         height: auto; 
     }
 
+    .flip-card-front {
+        width: 100%; /* Garante que o elemento ocupe toda a largura disponível */
+    }
+
+    .flip-card-front img {
+        width: 100%; /* Garantir que as imagens ocupem toda a largura do seu contêiner */
+        height: auto; /* Permitir que a altura seja ajustada automaticamente */
+    }
+
+    .flip-card-back {
+        padding: 10px; 
+        font-size: 14px; 
+    }
+
+    .flip-card-back h3 {
+        font-size: 20px;
+    }
+
+    .flip-card-back p {
+        font-size: 14px; 
+    }
+
     .prev-cocktail, .next-cocktail {
-        display: none;
+        display: none!important; 
     }
 }

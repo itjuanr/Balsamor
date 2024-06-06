@@ -19,26 +19,39 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
+
     $('.cocktail-list').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true, 
         prevArrow: $('.prev-cocktail'), 
         nextArrow: $('.next-cocktail'), 
         responsive: [
             {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2 
+                }
+            },
+            {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1, 
+                    centerMode: true, 
+                    centerPadding: '10px' 
                 }
             },
             {
                 breakpoint: 480,
                 settings: {
-                    slidesToShow: 1
+                    slidesToShow: 1, 
+                    centerMode: true,
+                    centerPadding: '10px'
                 }
             }
         ]
     });
 });
+
+
 
